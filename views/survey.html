@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey</title>
+    </head>
+
+    <body>
+        <h1>Midterm Survey</h1>
+
+
+        <form method="post" action="">
+            <label>Name
+                <input type="text" name="name">
+            </label>
+
+            <p>Check all that apply:</p>
+            <input type="checkbox" name="option1" >{{ @options[0] }}<br>
+            <input type="checkbox" name="option2" >{{ @options[1] }}<br>
+            <input type="checkbox" name="option3" >{{ @options[2] }}<br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </body>
+</html>
